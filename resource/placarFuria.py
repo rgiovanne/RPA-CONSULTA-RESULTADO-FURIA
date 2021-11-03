@@ -17,7 +17,7 @@ def buscar():
     codErro = None
     directory = os.path.split(
         os.path.split(os.path.realpath(__file__))[0])[0]
-    directory = os.path.join(directory, 'arquivos')
+    directory = os.path.join(directory)
     driver = perfil(False, directory)
 
     driver.get(url)
